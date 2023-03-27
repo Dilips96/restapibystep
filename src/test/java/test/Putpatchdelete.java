@@ -86,7 +86,7 @@ public class Putpatchdelete
 		 statusCode(204);
 		
 		
-	
+	  System.out.println("This is for the delete method");
 		
 	}
 	
