@@ -1,6 +1,12 @@
 package test;
 
- import org.testng.Assert;
+ import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
@@ -25,7 +31,7 @@ public class Firstmethod
 		System.out.println(response.getHeader("Content-type"));
 		int statusCode = response.getStatusCode();
 		
-		Assert.assertEquals(statusCode, 200);
+		AssertJUnit.assertEquals(statusCode, 200);
 		
 			
 	}
